@@ -44,4 +44,7 @@ const connection = new pg.Pool({
       });
   });
 
-module.exports = router;
+  router.use('/signup', require('./signup'));
+
+  module.exports = router;
+  
